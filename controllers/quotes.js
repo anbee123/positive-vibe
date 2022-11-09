@@ -29,6 +29,17 @@ quoteRouter.get("/new", (req, res) => {
       res.redirect("/quotes")
     })
   })
+  // UPDATE
+quoteRouter.put("/:id", (req, res) => {
+    Quote.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true },
+      (err, updatedQuote) => {
+    
+      res.redirect("/quotes");
+    })
+  })
   
 //CREATE//
 quoteRouter.post("/", (req, res) => {

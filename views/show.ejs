@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        body {
+            background-color: rgb(227, 199, 218);
+        }
         img {
-            height: 400px;
-            width:400px;
+            height: 600px;
+            width:600px;
+          padding-left: 400px;
+     
+        }
+        form {
+            text-align: left;
         }
     </style>
   </head>
@@ -18,7 +26,7 @@
       <a href="/quotes">Back to home page</a>
     </nav>
 
-    <img src="<%=quote.img%>"> <p>hello</p>
+    <img src="<%=quote.img%>">
 
     <br />
     <form action="/quotes/<%= quote._id%>?_method=DELETE" method="post">
