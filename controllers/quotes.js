@@ -37,7 +37,7 @@ quoteRouter.put("/:id", (req, res) => {
       { new: true },
       (err, updatedQuote) => {
     
-      res.redirect("/quotes");
+      res.redirect(`/quotes/${req.params.id}`);
     })
   })
   
