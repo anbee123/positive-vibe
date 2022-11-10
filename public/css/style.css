@@ -46,3 +46,7 @@ body {
     font-size: x-large;
     color: antiquewhite;
 }
+
+.btn {
+    text-align: center;
+}

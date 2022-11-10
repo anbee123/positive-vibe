@@ -17,12 +17,16 @@
      
         }
         form {
-            text-align: left;
+            position: relative;
         }
         h2, h3{
           text-align: center;
         }
-      
+        div {
+          text-align: center;
+        }
+     
+  
     </style>
   </head>
   <body>
@@ -38,11 +42,14 @@
 
 
     <br />
+    <div class="btn-btn">
     <form action="/quotes/<%= quote._id%>?_method=DELETE" method="post">
         <input type="submit" value="DELETE">
+
     </form>
+    
     <button><a href= "/quotes/<%=quote._id%>/edit">EDIT</a></button> <br>
-        </div> 
+      </div>
  
 
   </body>
